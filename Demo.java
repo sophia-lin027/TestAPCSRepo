@@ -1,27 +1,26 @@
 public class Demo {
   public static void main(String[] args){
-    //if (args.length == 0){
-    //  printLoop(5);
-    //}
-    //else {
-    //  int a = Integer.valueOf(args[0]);
-    //  printLoop(a);
-    //}
-  //}
-
-    int[]array1 = {1,2,3};
-    int[]array2 = {4,5,7,13};
-    int[]array3 = {6,10,11,17,20};
-    int[]array4 = {8,9,12,14,15,21};
-    int[]array5 = {16,18,19,22,25,27,28};
-    int[][]a = {array1, {}, array2, {} , array3, array4, array5};
-    System.out.println(arrayDeepToString(a).replace("}, ", "}, \n "));
-    System.out.println();
-    System.out.println(arrayDeepToString(create2DArray(5,4,4)).replace("}, ","}, \n "));
-    System.out.println();
-    System.out.println(arrayDeepToString(create2DArrayRandomized(6,4,4)).replace("}, ","}, \n "));
+    if (args.length == 0){
+      printLoop(5);
+    }
+    else {
+      int a = Integer.valueOf(args[0]);
+      printLoop(a);
+    }
   }
-  
+
+    //int[]array1 = {1,2,3};
+    //int[]array2 = {4,5,7,13};
+    //int[]array3 = {6,10,11,17,20};
+    //int[]array4 = {8,9,12,14,15,21};
+    //int[]array5 = {16,18,19,22,25,27,28};
+    //int[][]b = {array1, {}, array2, {} , array3, array4, array5};
+    //System.out.println(arrayDeepToString(b).replace("}, ", "}, \n "));
+    //System.out.println();
+    //System.out.println(arrayDeepToString(create2DArray(5,4,4)).replace("}, ","}, \n "));
+    //System.out.println();
+    //System.out.println(arrayDeepToString(create2DArrayRandomized(6,4,4)).replace("}, ","}, \n "));
+
   public static void printLoop(int n){
     for (int i = 1; i <= n; i++){
       for(int j = n; j >= i; j--){
